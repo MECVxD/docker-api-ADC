@@ -1,7 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
-const students = requite('./routes/students')
+const students = require('./routes/students')
 require('dotenv').config()
 app.use(bodyParser.urlencoded({ extends:false}))
 app.use(bodyParser.json())
